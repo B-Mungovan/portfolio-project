@@ -1,0 +1,19 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/css/navbar.css' %}"></link>
+</head>
+    <div class="nav-cont row px-4 p-0 mx-0" style="height: 5rem; top: 0; left: 0; white-space: nowrap;">
+        <button class="home-nav d-block " type="button">
+            <a id="home-btn" href="{% url 'homepage' %}">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p>Home</p>
+            </a>
+          </button>
+    </div> 
+</head>
+{% block content%}
+
+{% endblock%}

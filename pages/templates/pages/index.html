@@ -1,0 +1,64 @@
+{% extends 'pages/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static '/css/index.css' %}"></link>
+
+<div class="about-inner mx-auto row">
+    <p class="header-intro col-6 mx-auto">Ben Mungovan</p>
+    <p class="header-content col-12 mx-auto text-center"> Junior Front-end developer with experience in HTML, CSS and
+      JavaScript. Enthusiastic about creating user-friendly platforms to an outstanding
+      quality. Seeking to develop current and learn additional languages to gain further
+      experience within the tech industry.
+    </p> 
+    <div class="row mt-3 justify-content-center mx-auto">
+      <div class="linkedin col-1"><a href="https://www.linkedin.com/in/ben-mungovan-b66656225/"><i class="fa-brands fa-linkedin linkicon" style="color: rgb(0, 26, 255);"></i></a></div>
+      <div class="github col-1"></i><a href="https://github.com/BMQAacademy"><i class="fa-brands fa-github hubicon" style="color: rgb(0, 26, 255);"></i></a></div>
+    </div>   
+</div> 
+
+  <div class="details mx-auto mt-5">
+    <div class="find-out-more col-12 mb-5 row">
+      <p class="find-more-txt text-center" style="margin-top: 7rem;">Find out more</p>
+
+        <button class="project-1 col-3 d-block mx-auto mt-4" type="button">
+          <a id="btn1" href="{% url 'contact' %}">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>Contact me</p>
+          </a>
+        </button>
+    
+        <button class="project-2 col-3 d-block mx-auto mt-4" type="button">
+          <a id="btn3" href="{% url 'my_cv' %}" a>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>View my CV</p>
+          </a>
+        </button>
+    </div>
+
+    <div class="projects col-12 row">
+      <p class="projects-txt text-center" style="margin-top: 7rem;">Projects</p>
+      <button class="project-1 col-3 d-block mx-auto mt-4" type="button">
+      <p>Example</p>
+      </button>
+
+      <button class="project-2 col-3 d-block mx-auto mt-4" type="button">
+        <p>Example</p>
+      </button>
+
+      <button class="project-2 col-3 d-block mx-auto mt-4" type="button">
+      <p>Example</p>
+      </button>
+    </div>
+  </div>
+
+  {% endblock %}
+
+
+
+
